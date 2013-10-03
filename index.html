@@ -1,0 +1,341 @@
+<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+ <head> 
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>SPEC</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+        <link rel="icon" href="logo.svg">
+        <link rel="apple-touch-icon" href="logo.svg">
+        <link rel="apple-touch-icon-precomposed" href="logo.svg">
+
+        <script src="jquery-1.10.1.min.js"></script>
+        <script src="spec.js"></script>
+		<style type="text/css">
+            body{position:static;overflow:auto;font-size:20px;color:#aaa;font-family:sans-serif;}
+            a{color:inherit;}
+            article {position:absolute;width:800px;left:50%;margin:50px 0 50px -400px;}
+            spec{display:block;color:#000;position:relative;width:700px;margin:50px 0;padding:40px 50px 70px;border:solid thin #ddd;box-shadow:0px 2px 5px rgba(0,0,0,0.1);overflow:visible;}
+        	.ui-resizable-s:after{position:absolute;bottom:10px;left:0px;right:0px;height:30px;content:"arrastrame";font-size:18px;color:#999;text-align:center;line-height:30px;}
+        	.ui-resizable-s:hover:after{background:#f9f9f9;color:#666;}
+            spec h1{margin-top:0;}
+            spec h2{margin:20px 0;}
+            spec p{margin:20px 0;}
+            /*spec *{transition:color 0.5s;}*/
+            pre{font-size:16px;line-height:24px;padding:50px;background:#f8f8f8;white-space:pre-wrap;margin:40px 0;}
+                span {color:#ED1C24;}
+                span.blue {color:#00B66C;}
+                .fade span {color:#F07B7F;}
+                .fade b span {color:#ED1C24;}
+                .fade span.blue {color:#6ED6AC;}
+                pre i {/*color:#999;*/font-style: normal;}
+            .btn {padding:10px 20px;margin:10px 0;border-radius:5px;background:#eee;color:black;text-decoration:none;display:inline-block;}
+            .btn:hover {background:#f8f8f8;}
+            h2 {margin:100px 60px 40px;font-weight: 300;}
+            p {margin:20px 60px;}
+
+            .title {margin: 80px 60px 120px;color:#000;position:relative;}
+            .title img {float:left;margin-right: 30px;}
+            .title h1 {font-size: 90px; font-weight: 300; margin: 0; line-height: 0.7;}
+            .title h2 {font-size: 23px;margin: 15px 0;}
+            .title .btn {right:0;position:absolute;margin-top:0;width:160px;text-align: center;top:2px;}
+            .title .btn+.btn {top:56px;}
+            .hot {color:#ED1C24;}
+		</style>
+		<script type="text/javascript"> 
+
+		</script> 
+ </head> 
+ <body>
+ 	<article>
+ 		<div class="title">
+			<a href="spec.js" class="btn">descargar spec.js</a>
+			<a href="http://github.com/nacholabs/spec" class="btn">ver en github</a>
+ 			<img src="logo.svg">
+	        <h1>SPEC</h1>
+	        <h2>especificidad dinámica</h2>
+ 		</div>
+
+ 		<h2>DEMO</h2>
+        <p>Prueba <strong>spec</strong> arrastrando el borde inferior del siguiente texto:</p>
+
+
+        <spec>
+			<spec0>
+
+                        <h1>Oso panda</h1>
+                        <spec10><big>Panda gigante</big></spec10>
+                <spec50>
+                        <aside>
+                            <spec55><p>Superregnum: <strong>Eukaryota</strong></spec55></p>
+                            <spec60><p>Regnum: <strong>Animalia</strong></spec60></p>
+                            <spec65><p>Phylum: <strong>Chordata</strong></spec65></p>
+                            <spec70><p>Subphylum: <strong>Vertebrata</strong></spec70></p>
+                            <spec75><p>Classis: <strong>Mammalia</strong></spec75></p>
+                            <spec80><p>Ordo: <strong>Carnivora</strong></spec80></p>
+                            <spec85><p>Familia: <strong>Ursidae</strong></spec85></p>
+                            <spec90><p>Genus: <strong>Ailuropoda</strong></spec90></p>
+                            <p>Especie: <strong>Ailuropoda melanoleuca</strong></p>
+                            <p>Subespecies: <strong>Ailuropoda melanoleuca melanoleuca, Ailuropoda melanoleuca qinlingensis, Ailuropoda melanoleuca hastorni †</strong></p>
+                            <p>Hábitat: <strong>El panda gigante vive en seis regiones montañosas de China.</strong></p>
+                        </aside>
+                </spec50>
+                        <p>
+                        El <i>oso panda</i><spec3> o <i>panda gigante</i></spec3><spec9> ('Ailuropoda melanoleuca')</spec9> es una especie <spec3>de mamífero del orden de los carnívoros <spec10>y, aunque hay una gran controversia al respecto, los últimos estudios de su ADN lo engloban entre los</spec10> miembros </spec3>de la familia de los osos<spec5> (<i>Ursidae</i>)</spec5><spec15>, siendo el oso de anteojos su pariente más cercano<spec18>, si bien este pertenece a la subfamilia de los tremarctinos</spec18></spec15>. <spec7>Por otro lado, el panda rojo pertenece a una familia propia e independiente: <i>Ailuridae</i>. </spec7>Nativo de China central<spec5>, el panda gigante habita en regiones montañosas como Sichuan y el Tíbet<spec9>, hasta una altura de 3500m</spec9></spec5>. 
+                        </p>
+                    <spec5>
+                        <p>
+                        Está en peligro de extinción; la especie está muy localizada. <spec10>Con 1600 viviendo en las selvas y 188 en cautiverio <spec20>(estadísticas 2004 - 2005)</spec20>, informes demuestran que la cifra de pandas viviendo en libertad va en aumento.</spec10> El oso panda es el símbolo de WWF <spec15>(Fondo mundial para la protección de la naturaleza) </spec15>desde 1961. 
+                        </p>
+                    </spec5>
+                    <spec9>
+                        <p>
+                        El principal alimento del panda es el bambú<spec15> (en torno al 99% de su dieta)</spec15>, aunque también se alimenta de frutos, pequeños mamíferos, peces, e insectos. Es un buen trepador<spec5>, aunque rara vez se le ve en los árboles</spec5>.<spec10> Se adapta a la cautividad y gracias a su pelaje soporta fácilmente las condiciones invernales de su hábitat.</spec10>
+                        </p>
+                    </spec9>
+        <spec20>
+        <spec30>
+                        <h2>Nombre</h2>
+                        <p>
+                        El nombre del panda en chino significa 'gran oso-gato'<spec33>, aunque también se lo denomina oso fajado (huaxiong)</spec33>. Este nombre se debe a que, a diferencia de las demás especies de oso, el panda posee pupilas verticales, que recuerdan a la de los gatos.
+                        </p>
+                <spec35><p>
+                        La palabra 'panda' <spec37>(como se le llama en occidente)</spec37> es de origen incierto, aunque se cree que proviene de una lengua del Himalaya,<spec37> (posiblemente nepalí)</spec37>. Este nombre fue heredado del panda rojo, Ailurus fulgens, con el que se le emparentó durante mucho tiempo, por tener zarpas similares.<spec37> Cuando esta relación fue descartada se le dio su nombre científico 'Ailuropoda melanoleuca' que significa pie como el 'panda rojo' - negro y blanco.</spec37>
+                        </p>
+                </spec35>
+            </spec30>
+            <spec40>
+                        <h2>Historia</h2>
+                        <p>
+                        El panda se conoció en Occidente en 1869, cuando un cazador llevó una piel al misionero jesuita francés Armand David. <spec42>En 1936, Ruth Harkness llevó a los Estados Unidos un cachorro de panda, dando inicio a la pasión occidental por el animal. <spec44>De 1936 a 1946, 14 pandas fueron llevados de la China por extranjeros. En 1946, esta actividad quedó prohibida. <spec46>A partir de 1957, China comenzó a distribuir pandas como demostración de buena voluntad. Esta acción cesó por las leyes chinas de 1990 que consideraban que todo animal, incluyendo células reproductivas eran propiedad de China. <spec48>Además los zoológicos interesados en obtener individuos en calidad de "préstamo", están sujetos a la firma de contratos sin garantías para ellos, por diez años a un coste de entre 1 y 2 millones de dólares americanos por año.</spec48></spec46></spec44></spec42>
+                        </p>
+            </spec40>
+            <spec70>
+                        <h2>Clasificación</h2>
+                        <spec75><p>
+                        Durante mucho tiempo, el panda gigante, junto al panda rojo, fue incluido en la familia de los prociónidos, la misma de los mapaches. Pruebas genéticas recientes lo colocan en la familia de los osos (Ursidae), siendo su pariente más cercano el oso de anteojos de América del Sur.
+                        </p>
+                        </spec75>
+                        <p>
+                        Existen dos subespecies de panda gigante:
+                        <ul>
+                        <li>Ailuropoda melanoleuca melanoleuca<spec72> - a la que pertenece la mayor parte de la población de pandas<spec74>; se encuentra en las regiones montañosas de Sichuan</spec74>.</spec72></li>
+                        <li>Ailuropoda melanoleuca qinlingensis<spec72> - vive en las montañas Qinling en Shaanxi a 1.300–3.000 msnm<spec74>. Se distinguen de la variedad de Schiuan por tener una coloración distinta (marrón claro y oscuro) y una cabeza más pequeña con molares más largos</spec74>.</spec72></li>
+                        </ul>
+                        </p><p>
+                        El primer intento de clasificación, por Armand David, puso al panda bajo el género Ursus, llamándolo Ursus melanoleucus en 1869. En 1870, Alphonse Milne-Edwards rebautizó al animal con el nombre actual.
+                        </p>
+                        <spec75><p>
+                        De acuerdo con los análisis comparativos de ADN, evolutivamente, los pandas se separan del tronco principal de los osos hace alrededor de 17 millones de años. En aquella época el Ursavus u oso del amanecer, habitaba en Europa subtropical. 
+                        </p></spec75>
+                        <spec77><p>
+                        Los fósiles encontrados prueban que el panda vivió en ambientes y regiones diferentes de las que lo hace en la actualidad. Otros registros fósiles hallados hablan de la existencia de una segunda especie (hoy extinta), el Ailuropoda minor, que tenía la mitad del tamaño del panda moderno.
+                        </p></spec77><spec79><p>
+                        En 2002 fue publicado un trabajo que prueba, a través de estudios de su genoma, que el panda enfrentó una situación de cuello de botella hace 43.000 años. El cuello de botella es un fenómeno en el que la población de una especie es diezmada por lo que los ejemplares actuales descienden de un pequeño grupo de supervivientes.
+                        </p></spec79>
+            </spec70>
+            <spec80>
+                        <h2>Distribución</h2>
+                        <p>
+                        <spec82>El primer registro evolutivo del panda data de entre el final del Plioceno y el comienzo del Pleistoceno. Algunos restos fósiles fueron encontrados en Birmania, Vietnam y en la porción oriental de China, llegando hasta Pekín al norte. </spec82>Hoy en día las poblaciones de pandas se encuentran solamente en el sudoeste de China.
+                        </p>
+                        <spec85><p>
+                        El panda habita en las sierras de Minshan, Qinling, Qionglai, Liangshan, Daxiangling y Xiaoxiangling. Son montañas cubiertas por floresta húmeda de coníferas, hábitat ideal para la especie de bambú (la caña que constituye su principal alimento).<spec88> Son considerados uno de los más ricos ecosistemas de clima templado del planeta. Las alturas en las que se ubican los territorios en la que habitan los pandas van de los 1200 a los 3400m.</spec88>
+                        </p>
+                    </spec85>
+            </spec80>
+            <spec49>
+                        <h2>Apariencia</h2>
+                        <p>
+
+                        Exteriormente, el panda se asemeja a un oso de coloración contrastante. <spec53>El panda de Sichuan presenta el reconocido pelaje negro y blanco, mientras la subespecie de Qingling tiene un pelaje de dos tonos contrastantes de marrón.</spec53>
+                        </p>
+                        <spec55><p>
+                        Las orejas, nariz, los pelos alrededor de los ojos, los hombros y los miembros son oscuros. La cara, vientre y el lomo son blancos. Las orejas son ovales y erectas. La pata del panda, con cinco dedos, presenta un "sexto dedo" a manera de un pulgar. <spec57>Se trata de la modificación de un hueso sesamoide de la muñeca.<spec59> Stephen Jay Gould, escribió un ensayo sobre este caso, que publicó en la recopilación The Panda's Thumb (1980).</spec59> Sus patas delanteras son fuertes y aptas para escalar y más largas y musculosas que las traseras. Sus ojos son pequeños, y mientras las pupilas de los demás osos son redondas, las del panda son como las de los gatos, lo que les da el nombre en chino de oso-gato.</spec57>
+                    </spec55>
+                        Las crías de panda al nacer pesan de 90 a 130 gramos, y es casi pelado, pero de adultos, pueden pesar entre 70 y 125 kg.
+                        </p>
+            </spec49>
+            <spec90>
+                        <h2>Dieta</h2>
+                        <p>
+                        A pesar de pertenecer al orden de los carnívoros, el panda es un animal mayormente herbívoro<spec93>, alimentándose casi exclusivamente de cerca de 30 especies de caña de bambú (el 99% de su dieta consiste en bambú)</spec93>. Se sabe que el panda también utiliza insectos y huevos como fuente de proteínas.<spec93> Es posible que incluya, además roedores y crías de ciervo musk.</spec93>
+                        </p>
+                        <spec98><p>
+                        Como herencia de sus antepasados carnívoros su sistema digestivo no está plenamente adaptado para asimilar las moléculas de celulosa, contenidas en el bambú, por eso necesitan consumir hasta 40 kg de bambú por día (de los que 23 kg de media son defecaciones) tarea que puede ocuparle hasta 14 horas. Sus fuertes dientes y mandíbulas están adaptados para triturar los troncos del bambú y llegar a su pulpa.
+                        </p></spec98><spec97><p>
+                        A pesar de que un gran consumo de bambú representa un gran consumo de agua (el 40% del peso del bambú corresponde a agua, cifra que llega a 90% en los brotes), el panda bebe frecuentemente agua de riachos o nieve derretida. 
+                        </p></spec97><spec95><p>
+                        En cautiverio su dieta consiste en bambú, caña de azúcar, papilla de arroz, galletas especiales con alto contenido de fibras, zanahoria, manzana y batata.
+                        </p></spec95><spec93><p>
+                        Actualmente, según una agencia de noticias china, el panda enfrenta un serio riesgo de extinción debido a la floración del bambú que le sirve de alimento.
+
+                        </p></spec93>
+            </spec90>
+            <spec100>
+                        <h2>Reproducción</h2>
+                        <p>
+                        Los pandas alcanzan su madurez sexual entre los cinco y los siete años de edad.
+                        </p><p>
+                        La época de reproducción se desarrolla durante la primavera (de mediados marzo a mediados de mayo). Durante esta época de dos a cinco machos pueden competir por una hembra fértil. Cuando un macho se destaca sobre el resto obtiene el derecho a copular con la hembra. El tiempo de cópula es corto y va de los 30 segundos a los 5 minutos, pero el macho puede montar a la hembra varias veces para asegurar el éxito de la fecundación. Suelen ser ruidosas, acompañadas por gemidos y alaridos.
+                        </p>
+                        <spec105><p>
+                        La gestación del embrión (que puede pesar entre 90 y 130 g, lo que representa 1/900 parte del peso de la madre) dura, en promedio, 135 días. Normalmente nacen una o dos crías, si se diera el segundo caso, la madre optará por continuar la crianza de sólo una de ellas (la que note con mayores probabilidades de sobrevivir).<spec108>La cría rechazada es abandonada y muere. Este comportamiento, observado en varias especies, se da cuando le es imposible a la madre cuidar de varias crías, por lo que elige a la más apta (aún no se conoce cómo realiza la madre esta selección, pero está siendo estudiado por los científicos).</spepc108>
+                        </p></spec105><p>
+                        Al nacer la cría es ciega y su piel tiene una coloración rosada (producto de una reacción química entre la piel del recién nacido y la saliva de su madre), un mes después del nacimiento el panda adquirirá su tradicional pigmentación.
+                        </p><spec105><spec108><p>
+                        La madre amamantará a su cría entre 6 y 14 veces por día por un lapso de 30 minutos cada vez. Solamente por tres o cuatro horas abandonará a su cría para procurarse alimento, durante este tiempo la cría queda indefensa. <spec109>Aunque la cría de panda sea capaz de ingerir pequeñas cantidades de bambú desde los seis meses </spec109>el destete se produce al año de vida.
+                        </p><p>
+                        Por otra parte la cría comienza a andar (torpemente) a partir de los 75 días, desde entonces la madre lo estimulará jugando y luchando con ella.
+                        </p></spec108><p>
+                        La cría vivirá con su madre (ya que el padre no toma parte de la crianza) hasta los dos años de vida. El intervalo entre una camada de crías y otra puede durar más de dos años.
+                        </p><p>
+                        En cautiverio la cría de pandas se vuelve muy dificultosa: solamente el 10% logra aparearse naturalmente y apenas el 30% de las hembras quedan preñadas.<spec108>Además el 60% de los pandas cautivos pierde totalmente su deseo sexual. Algunos científicos (sobre todo en China y Tailandia) intentan reducir este problema a partir de vídeos de pandas copulando. Los científicos no creen que aprenden comportamientos copulativos, sino, que los sonidos asociados estimulan a los pandas que los escuchan.</spec108>
+                        </p></spec105><p>
+                        La expectativa de vida de un panda es de unos 12 años. En 2005, Basi, una panda hembra china, cumplió 25 años de edad (que equivalen a 100 años humanos), ese mismo año el panda criado en cautiverio más viejo del mundo, una hembra llamada Meimei, murió a los 36 (equivalentes a 144 años humanos), en el jardín zoológico de la ciudad de Guilin.
+
+                        </p>
+            </spec100>
+            <spec70>
+                        <h2>Estado de conservación</h2>
+                        <p>
+
+                        La baja tasa de natalidad, la alta tasa de mortalidad infantil y la destrucción de su ambiente natural lo colocan bajo la amenaza de la extinción.<spec76>La ley china es muy rígida en cuanto a su caza, lo que ha disminuido esta problemática. En 1995, un terrateniente fue sentenciado a prisión perpetua por haberle disparado a un panda. Al año siguiente, dos hombres fueron condenados a pena capital después de ser capturados portando pieles de panda y mono dorado. A partir de 1997 la pena para los infractores pasó a ser de 20 años de prisión.</spec76>
+                        </p><spec74><p>
+                        Las trampas para ciervos almiscarados y osos negros muchas veces acaban hiriendo a los pandas.
+                        </p></spec74><p>
+                        El número de pandas salvajes en China está estimado en 1600.<spec72> En 2000 se contaban 1114 ejemplares, esparcidos por territorios que tienen una superficie total de 23 000 km² en las provincias de Sichuan, Gansu y Shaanxi.</spec72><spec76> Estudios en 2006, basados en exámenes de ADN extraído de excrementos de panda, indican que podría haber 3000 animales en libertad.</spec76><spec74> Existen 239 pandas gigantes en cautiverio en China. Más de un centenar de ellos están en un centro especializado en Sichuan. Otros 20 especímenes se encuentran distribuidos por los principales zoológicos del mundo.</spec74>
+
+                        </p>
+            </spec70>
+            <spec76>
+                        <h2>Evolución temporal del estado de conservación</h2>
+                        <p>
+                            <ul>
+                                <li>1965 - "Muy raro pero se considera que el número de individuos será estable o aumentará" (Scott, 1965)</li>
+                                <spec78><li>1986 - Raro (IUCN Conservation Monitoring Centre 1986)</li>
+                                <li>1988 - Raro (IUCN Conservation Monitoring Centre 1988)</li>
+                                <li>1990 - Amenazado (IUCN 1990)</li>
+                                <li>1994 - Amenazado (Groombridge 1994)</li>
+                            </spec78>
+                                <li>1996 - Amenazado (IUCN Bear Specialist Group 1996)</li>
+                            </ul>
+                        </p>
+            </spec76>
+            <spec79>
+                        <h2>Baby boom</h2>
+                        <p>
+
+                        El 2005 fue considerado un gran año para los proyectos de cría en cautiverio de la especie, 25 crías nacidas en zoológicos y centros de reproducción sobrevivieron. En 2004 sobrevivieron apenas 9 crías.
+
+                        </p>
+            </spec79>
+            <spec50>
+                        <h2>Hábitos</h2>
+                        <p>
+
+                        Los pandas son animales normalmente solitarios. <spec52>Su mayor actividad se desarrolla durante la salida y la puesta del sol pasando la mayor parte del tiempo restante durmiendo en bosques de bambú.</spec52> <spec54>Marcan su territorio con una combinación de olores que producen con su glándula anal, orina y marcas con las garras. De este modo, evitan conflicto al no usar áreas compartidas del territorio.</spec54>
+                        </p>
+                        <spec58><p>
+                        Al ser un animal subtropical, el panda ha perdido el hábito de la hibernación.
+
+                        </p></spec58>
+            </spec50>
+            <spec51>
+                        <h2>En la cultura popular</h2>
+                        <p>
+
+                        Es una especie con gran atractivo para la gente y que se ha usado como reclamo para diferentes causas conservacionistas<spec56>, como la World Wildlife Fund (WWF) que adoptó al panda como símbolo</spec56>.<spec52> Los pandas en cautividad en algunos zoos se han convertido en fuertes reclamos para esos zoos, y en ocasiones en iconos populares<spec56> (Tohuí Panda, Chu-Lin)</spec56>.</spec52>
+                        </p><spec54><p>
+                        En China es el animal nacional. La ley china prevee duras penas a los que cazan osos panda.
+                        </p></spec54><spec58><p>
+                        Ha aparecido en numerosos videojuegos, dibujos animados, películas y cómics. Su  nombre se ha asociado a diferentes productos, coches o galletas por ejemplo.
+                        </p></spec58>
+            </spec51>
+            <spec110>
+                        <h2>El panda y los creacionistas</h2>
+                        <p>
+
+                        El sexto "pulgar" del panda avivó, a través del libro Of Pandas and People, las creencias de los religiosos defensores del creacionismo|neocreacionismo, que creen que un "diseño inteligente" rige la evolución de las especies, en contra del evolucionismo que es la norma científica. Los neocreacionistas plantean que Dios, llamado (según esta teoría) agente inteligente, está detrás del proceso evolutivo.La comunidad científica afirma que este planteo constituye una pseudociencia.</p>
+            </spec110>
+        </spec20>
+        </spec0></spec>
+
+        <h2>¡WTF!</h2>
+        <p>
+            <strong>spec</strong> es una extensión de jQuery que te permite designar zonas de especificidad en un texto. De esa forma, se le puede dar control al usuario sobre qué tan corto y resumido o qué tan extenso y específico prefiere que sea el texto, sin pérdidas de cohesión ni coherencia.
+        </p><p>
+            El truco está en marcar el texto asignando niveles de especificidad. De esa manera, cuanto más texto pide el usuario, mostramos los fragmentos más específicos, y cuanto menos texto pide el usuario, vamos escondiendo del más específico al menos específico, hasta que sólo queda una noción vaga del artículo.
+        </p>
+        <p>
+            Esto se hace mediante etiquetas html5. Así se ve un texto html con <strong>spec</strong>:
+        </p>
+        <pre>
+<span class="blue">&lt;spec&gt;</span>
+<span>&lt;spec0&gt;</span>
+
+<i>&lt;h1&gt;</i>Oso panda<i>&lt;/h1&gt;</i>
+
+<span>&lt;spec10&gt;</span><i>&lt;big&gt;</i>Panda gigante<i>&lt;/big&gt;</i><span>&lt;/spec10&gt;</span>
+
+<i>&lt;p&gt;</i>
+
+	El <i>&lt;i&gt;</i>oso panda<i>&lt;/i&gt;</i><span>&lt;spec3&gt;</span> o <i>&lt;i&gt;</i>panda gigante<i>&lt;/i&gt;</i><span>&lt;/spec3&gt;</span><span>&lt;spec9&gt;</span> ('Ailuropoda melanoleuca')<span>&lt;/spec9&gt;</span> es una especie <span>&lt;spec3&gt;</span>de mamífero del orden de los carnívoros <span>&lt;spec10&gt;</span>y, aunque hay una gran controversia al respecto, los últimos estudios de su ADN lo engloban entre los<span>&lt;/spec10&gt;</span> miembros <span>&lt;/spec3&gt;</span>de la familia de los osos<span>&lt;spec5&gt;</span> (<i>&lt;i&gt;</i>Ursidae<i>&lt;/i&gt;</i>)<span>&lt;/spec5&gt;</span><span>&lt;spec15&gt;</span>, siendo el oso de anteojos su pariente más cercano<span>&lt;spec18&gt;</span>, si bien este pertenece a la subfamilia de los tremarctinos<span>&lt;/spec18&gt;</span><span>&lt;/spec15&gt;</span>. <span>&lt;spec7&gt;</span>Por otro lado, el panda rojo pertenece a una familia propia e independiente: <span>&lt;i&gt;</span>Ailuridae<span>&lt;/i&gt;</span>. <span>&lt;/spec7&gt;</span>Nativo de China central<span>&lt;spec5&gt;</span>, el panda gigante habita en regiones montañosas como Sichuan y el Tíbet<span>&lt;spec9&gt;</span>, hasta una altura de 3500m<span>&lt;/spec9&gt;</span><span>&lt;/spec5&gt;</span>. 
+
+<i>&lt;/p&gt;</i>
+
+<span>&lt;spec5&gt;</span>
+<i>&lt;p&gt;</i>
+
+	Está en peligro de extinción; la especie está muy localizada. <span>&lt;spec10&gt;</span>Con 1600 viviendo en las selvas y 188 en cautiverio <span>&lt;spec20&gt;</span>(estadísticas 2004 - 2005)<span>&lt;/spec20&gt;</span>, informes demuestran que la cifra de pandas viviendo en libertad va en aumento.<span>&lt;/spec10&gt;</span> El oso panda es el símbolo de WWF <span>&lt;spec15&gt;</span>(Fondo mundial para la protección de la naturaleza) <span>&lt;/spec15&gt;</span>desde 1961. 
+
+<i>&lt;/p&gt;</i>
+<span>&lt;/spec5&gt;</span>
+
+<span>&lt;spec9&gt;</span>
+<i>&lt;p&gt;</i>
+	El principal alimento del panda es el bambú<span>&lt;spec15&gt;</span> (en torno al 99% de su dieta)<span>&lt;/spec15&gt;</span>, aunque también se alimenta de frutos, pequeños mamíferos, peces, e insectos. Es un buen trepador<span>&lt;spec5&gt;</span>, aunque rara vez se le ve en los árboles<span>&lt;/spec5&gt;</span>.<span>&lt;spec10&gt;</span> Se adapta a la cautividad y gracias a su pelaje soporta fácilmente las condiciones invernales de su hábitat.<span>&lt;/spec10&gt;</span>
+
+<i>&lt;/p&gt;</i>
+<span>&lt;/spec9&gt;</span>
+
+<span>&lt;/spec0&gt;</span>
+<span class="blue">&lt;/spec&gt;</span>
+        </pre>
+
+        <h2>Uso avanzado</h2>
+        <p>
+            <strong>spec</strong> también admite cláusulas negativas. Es decir, etiquetas para un contenido que se debe mostrar <u>debajo</u> de un nivel de especificidad. Esto se puede lograr así:
+        </p>
+        <pre class="fade">
+<span class="blue">&lt;spec&gt;</span>
+<span>&lt;spec0&gt;</span>
+<span>&lt;p&gt;</span>
+	El <span>&lt;i&gt;</span>oso panda<span>&lt;/i&gt;</span> es <b><span>&lt;spec-1&gt;</span></b>un oso<b><span>&lt;/spec-1&gt;</span><span>&lt;spec1&gt;</span></b>una especie <span>&lt;spec3&gt;</span>de mamífero del orden de los carnívoros <span>&lt;spec10&gt;</span>y, aunque hay una gran controversia al respecto, los últimos estudios de su ADN lo engloban entre los<span>&lt;/spec10&gt;</span> miembros <span>&lt;/spec3&gt;</span>de la familia de los osos<b><span>&lt;/spec1&gt;</span></b>.
+<span>&lt;/p&gt;</span>
+<span>&lt;/spec0&gt;</span>
+<span class="blue">&lt;/spec&gt;</span>
+        </pre>
+        <p>
+            <strong>spec</strong> se inicia automáticamente sobre todos los elementos <span>&lt;spec&gt;</span>, pero si se desea, se lo puede llamar sobre cualquier elemento:
+        </p>
+        <pre class="fade"><span>&lt;script&gt;</span>
+    $(<span class="blue">'.spec'</span>).spec();
+<span>&lt;/script&gt;</span></pre>
+
+        <h2>Instalación</h2>
+        <p>
+            <strong>spec</strong> funciona sobre <a href="http://jquery.com/">jQuery</a> . Para implementarlo, basta incluir las librerías en este orden:
+        </p>
+        <pre>&lt;head&gt;
+    &lt;script src="<span>jquery-1.8.2.js</span>"&gt;&lt;/script&gt;
+    &lt;script src="<span>spec.js</span>"&gt;&lt;/script&gt;
+&lt;/head&gt;</pre>
+        <p><a href="spec.js" class="btn">Descargar spec.js</a></p>
+    </article>
+ </body> 
+</html>
